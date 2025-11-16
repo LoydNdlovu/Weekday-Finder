@@ -1,0 +1,13 @@
+function getWeekday(dateString) {
+  const date = new Date(dateString); // create a Date object
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+  return days[date.getUTCDay()]; // use getUTCDay() to ignore time zones
+}
